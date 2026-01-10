@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-performance-sync",
+  "version": "0.1.0",
+  "description": "Export your entire portfolio with a single click, then import to Portfolio Performance!",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit && vitest run && node scripts/build.js",
+    "tests": "vitest run",
+    "tests:dev": "vitest",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1",
+    "esbuild": "^0.27",
+    "typescript": "^5.9",
+    "vitest": "^4.0"
+  }
+}
