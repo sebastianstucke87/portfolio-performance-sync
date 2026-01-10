@@ -18,19 +18,24 @@ brokers.
 | Non-Trade Security | Transfer (Inbound), Transfer (Outbound)           |
 | Cash               | Deposit, Dividend, Fees, Interest, Removal, Taxes |
 
-## Install
+[//]: # (## Install)
+[//]: # ()
+[//]: # (- [Chrome Web Store]&#40;https://chromewebstore.google.com/detail/hcjficenfcaankcojdbolipbfmimpofh&#41;)
+[//]: # (- [Firefox Add-ons]&#40;https://addons.mozilla.org/en-US/firefox/addon/portfolio-performance-sync/&#41;)
+
+### Manual Install
 ```bash
 git clone https://github.com/sebastianstucke87/portfolio-performance-sync.git
 cd portfolio-performance-sync
 npm install
 npm run build
 ```
-### Chrome
+#### Chrome
 1. In Chrome, open `chrome://extensions`
 2. Click `Load unpacked`
 3. Select folder `(...)\portfolio-performance-sync\dist\chrome`
 
-### Firefox
+#### Firefox
 1. In Firefox, open `about:debugging#/runtime/this-firefox`
 2. Click `Load Temporary Add-on...`
 3. Open `(...)\portfolio-performance-sync\dist\firefox\manifest.json`
