@@ -18,10 +18,9 @@ brokers.
 | Non-Trade Security | Transfer (Inbound), Transfer (Outbound)           |
 | Cash               | Deposit, Dividend, Fees, Interest, Removal, Taxes |
 
-[//]: # (## Install)
-[//]: # ()
+## Install
 [//]: # (- [Chrome Web Store]&#40;https://chromewebstore.google.com/detail/hcjficenfcaankcojdbolipbfmimpofh&#41;)
-[//]: # (- [Firefox Add-ons]&#40;https://addons.mozilla.org/en-US/firefox/addon/portfolio-performance-sync/&#41;)
+- [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/portfolio-performance-sync)
 
 ### Manual Install
 ```bash
