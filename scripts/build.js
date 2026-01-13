@@ -22,7 +22,7 @@ for (const browser of browsers) {
             bundle: true,
             sourcemap: true,
             target: 'es2022',
-            format: 'esm',
+            format: browser === 'firefox' ? 'iife' : 'esm',
         };
 
         if (isWatch) {

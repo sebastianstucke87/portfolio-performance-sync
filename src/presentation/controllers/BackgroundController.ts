@@ -71,7 +71,7 @@ export class BackgroundController {
     }
 
     private async triggerExport(tabId: number): Promise<void> {
-        const portfolios = this.tabPortfolioStore.get(tabId);
+        const portfolios = await this.contentScriptClient.fetchPortfolios(tabId);
         if (portfolios.length === 0) {
             return;
         }
