@@ -1,8 +1,10 @@
 import * as esbuild from 'esbuild';
-import {copyFileSync, cpSync, mkdirSync} from 'fs';
+import {copyFileSync, cpSync, mkdirSync, rmSync} from 'fs';
 
 const isWatch = process.argv.includes('--watch');
 const browsers = ['chrome', 'firefox'];
+
+rmSync('dist', {recursive: true, force: true});
 
 const entryPoints = [
     ['src/presentation/background/service-worker.ts', 'background/service-worker.js'],
