@@ -59,12 +59,12 @@ npm run build
 ## Is my data safe?
 - This browser extension can read browser sessions and intercept web requests to `https://scalable.capital`.
 - All intercepted data is processed locally.
+- No data in any form is sent to other recipients (e.g. via [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) or [XMLHttpRequest API](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest_API)).
 - The resulting CSV is in plaintext and downloaded to the download directory.
 - 3rd party dependencies are kept to an absolute minimum (see [package.json](package.json)).
-- This extension does not send any intercepted data to another recipient (e.g. via [Fetch_API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) or [XMLHttpRequest_API](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest_API)).
-- Report any suspicious side effects immediately.
 
 ### As always:
+- Report any suspicious side effects immediately.
 - Any representation of this extension outside of `github.com`, `chrome.google.com` or `addons.mozilla.org` under the namespace `sebastianstucke87` is fraudulent by definition and must be reported immediately.
 - This extension is not for sale.
 
