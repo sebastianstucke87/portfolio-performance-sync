@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Portfolio Performance Sync",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "browser_specific_settings": {
         "gecko": {
             "id": "portfolio-performance-sync@sebastianstucke87.github.io",
@@ -12,10 +12,7 @@
         }
     },
     "description": "Export your entire portfolio with a single click, then import to Portfolio Performance!",
-    "permissions": [
-        "cookies",
-        "downloads"
-    ],
+    "permissions": [],
     "host_permissions": [
         "https://*.scalable.capital/*"
     ],

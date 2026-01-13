@@ -1,6 +1,6 @@
 {
   "name": "portfolio-performance-sync",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Export your entire portfolio with a single click, then import to Portfolio Performance!",
   "license": "MIT",
   "type": "module",
