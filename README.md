@@ -19,8 +19,8 @@ brokers.
 | Cash               | Deposit, Dividend, Fees, Interest, Removal, Taxes |
 
 ## Install
-[//]: # (- [Chrome Web Store]&#40;https://chromewebstore.google.com/detail/hcjficenfcaankcojdbolipbfmimpofh&#41;)
-- [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/portfolio-performance-sync)
+- Chrome: https://chromewebstore.google.com/detail/portfolio-performance-syn/hcjficenfcaankcojdbolipbfmimpofh
+- Firefox: https://addons.mozilla.org/firefox/addon/portfolio-performance-sync
 
 ### Manual Install
 ```bash
