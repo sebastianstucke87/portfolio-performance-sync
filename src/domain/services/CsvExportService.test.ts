@@ -264,4 +264,32 @@ describe('CsvExportService', () => {
             ',Acme Broker,Acme Broker',
         );
     });
+
+    it('should map SWAP_OUT to Transfer (Outbound) in CSV export', () => {
+        const factory = new TransactionFactory();
+        const csvExportService = new CsvExportService();
+
+        const dto: TransactionResponseDto = {
+            id: 'tx-swap-out',
+            currency: 'EUR',
+            type: 'NON_TRADE_SECURITY_TRANSACTION',
+            status: 'SETTLED',
+            isCancellation: false,
+            lastEventDateTime: '1999-12-31T16:00:00Z',
+            description: 'Security Swap Out',
+            nonTradeSecurityTransactionType: 'SWAP_OUT',
+            quantity: 121.5498,
+            amount: 0,
+            isin: 'XX0000000001',
+        };
+
+        const transactions = [factory.createFromDto(dto)];
+        const csv = csvExportService.toCsv(transactions, TEST_ACCOUNTS);
+
+        const lines = csv.split('\n');
+        expect(lines[1]).toBe(
+            '1999-12-31,Transfer (Outbound),0.00,121.549800,XX0000000001,,Security Swap Out,,,' +
+            ',Acme Broker,Acme Broker',
+        );
+    });
 });

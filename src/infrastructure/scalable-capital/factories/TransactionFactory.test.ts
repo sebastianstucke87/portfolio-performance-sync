@@ -101,6 +101,36 @@ describe('TransactionFactory', () => {
             expect(tx.type.toString()).toBe('Transfer (Outbound)');
         });
 
+        it('maps SWAP_IN to Transfer (Inbound)', () => {
+            const dto: TransactionResponseDto = {
+                ...baseDto,
+                type: 'NON_TRADE_SECURITY_TRANSACTION',
+                nonTradeSecurityTransactionType: 'SWAP_IN',
+                quantity: 3.0,
+                amount: 0,
+                isin: 'XX0000000001',
+            } as TransactionResponseDto;
+
+            const tx = factory.createFromDto(dto);
+
+            expect(tx.type.toString()).toBe('Transfer (Inbound)');
+        });
+
+        it('maps SWAP_OUT to Transfer (Outbound)', () => {
+            const dto: TransactionResponseDto = {
+                ...baseDto,
+                type: 'NON_TRADE_SECURITY_TRANSACTION',
+                nonTradeSecurityTransactionType: 'SWAP_OUT',
+                quantity: 3.0,
+                amount: 0,
+                isin: 'XX0000000001',
+            } as TransactionResponseDto;
+
+            const tx = factory.createFromDto(dto);
+
+            expect(tx.type.toString()).toBe('Transfer (Outbound)');
+        });
+
         it('throws for unknown non-trade transaction type', () => {
             const dto: TransactionResponseDto = {
                 ...baseDto,

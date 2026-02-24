@@ -12,11 +12,11 @@ brokers.
 
 2. This browser extension is currently unstable and supports only **Scalable Capital** with these transaction types:
 
-| Category           | Transaction Types                                 |
-|--------------------|---------------------------------------------------|
-| Security           | Buy, Sell                                         |
-| Non-Trade Security | Transfer (Inbound), Transfer (Outbound)           |
-| Cash               | Deposit, Dividend, Fees, Interest, Removal, Taxes |
+| Category           | Transaction Types                                    |
+|--------------------|------------------------------------------------------|
+| Security           | Buy, Sell                                            |
+| Non-Trade Security | Transfer (Inbound/Outbound), Swap (Inbound/Outbound) |
+| Cash               | Deposit, Dividend, Fees, Interest, Removal, Taxes    |
 
 ## Install
 - Chrome: https://chromewebstore.google.com/detail/portfolio-performance-syn/hcjficenfcaankcojdbolipbfmimpofh

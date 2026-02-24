@@ -49,11 +49,17 @@ export class TransactionFactory {
     }
 
     private mapNonTradeSecurityTransactionType(dto: TransactionResponseDto): TransactionType {
-        if (dto.nonTradeSecurityTransactionType === 'TRANSFER_IN') {
+        if (
+            dto.nonTradeSecurityTransactionType === 'TRANSFER_IN' ||
+            dto.nonTradeSecurityTransactionType === 'SWAP_IN'
+        ) {
             return TransactionType.TransferInbound;
         }
 
-        if (dto.nonTradeSecurityTransactionType === 'TRANSFER_OUT') {
+        if (
+            dto.nonTradeSecurityTransactionType === 'TRANSFER_OUT' ||
+            dto.nonTradeSecurityTransactionType === 'SWAP_OUT'
+        ) {
             return TransactionType.TransferOutbound;
         }
 
